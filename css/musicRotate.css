@@ -1,0 +1,166 @@
+@keyframes myfirstAnimate{
+  /*form{;}
+　　			 to{transform:rotate(360deg);}*/
+ 0%{
+   transform:rotate(0deg);
+   -moz-transform:rotate(0deg);
+   -webkit-transform:rotate(0deg);
+   -o-transform:rotate(0deg);
+ }50%{
+   transform:rotate(180deg);
+   -moz-transform:rotate(180deg);
+   -webkit-transform:rotate(180deg);
+   -o-transform:rotate(180deg);
+ }100%{
+   transform:rotate(360deg);
+   -moz-transform:rotate(360deg);
+   -webkit-transform:rotate(360deg);
+   -o-transform:rotate(360deg);
+ }
+}
+
+.musicImgRotate{
+ animation: myfirstAnimate 3s linear infinite;
+ -moz-animation: myfirstAnimate 3s linear infinite;	/* Firefox */
+ -webkit-animation: myfirstAnimate 3s linear infinite;	/* Safari 和 Chrome */
+ -o-animation: myfirstAnimate 3s linear infinite;	/* Opera */
+}
+
+@-webkit-keyframes bigSmallImg {
+
+0%{
+right: 2%;
+top:3%;
+}50%{
+right: 1%;
+top:1%;
+}100%{
+right: 2%;
+top:3%;
+}
+}
+
+.bigSmall{
+animation:bigSmallImg 1.5s .5s linear infinite;
+-moz-animation:bigSmallImg 1.5s .5s linear infinite;
+-webkit-animation:bigSmallImg 1.5s .5s linear infinite;
+-o-animation:bigSmallImg 1.5s .5s linear infinite;
+}
+
+
+@keyframes rotateALittle{
+/*form{;}
+　　			 to{transform:rotate(360deg);}*/
+0%{
+transform:scale(0.9);
+-moz-transform:scale(0.9);
+-webkit-transform:scale(0.9);
+-o-transform:scale(0.9);
+}50%{
+transform:scale(1);
+-moz-transform:scale(1);
+-webkit-transform:scale(1);
+-o-transform:scale(1);
+}100%{
+ transform:scale(0.9);
+ -moz-transform:scale(0.9);
+ -webkit-transform:scale(0.9);
+ -o-transform:scale(0.9);
+}
+}
+
+.rotateALittleImg{
+animation: rotateALittle 1s linear infinite;
+-moz-animation: rotateALittle 1s linear infinite;	/* Firefox */
+-webkit-animation: rotateALittle 1s linear infinite;	/* Safari 和 Chrome */
+-o-animation: rotateALittle 1s linear infinite;	/* Opera */
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+
+#bofang,#page1,#final,#sharep,#sharepC{
+width: 100%;
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+z-index: 100;
+background: transparent;
+}
+#bofang,#final,#sharep{
+z-index: 102;
+}
+
+#sharepC{
+z-index: 103;
+}
+
+#bg{
+position: absolute;
+width: 100%;
+height: 100%;
+top:0;
+left: 0;
+}
+
+#loo{
+position: absolute;
+width: 60%;
+left: 20%;
+top: 2%;
+}
+
+#share,#shareC,#re,#reC{
+position: absolute;
+width: 30%;
+top: 90%;
+}
+
+#share,#shareC{
+left: 15%;
+}
+
+#re,#reC{
+right: 15%;
+}
+
+#shareC,#reC{
+height: 8%;
+}
+
+#tip{
+position: absolute;
+width: 50%;
+right: 2%;
+top: 3%;
+}
+
+.hide{
+display: none;
+}
+
+.video-box{
+position:fixed;
+z-index: 101;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+object-fit:fill;
+}
+#a9009,#a9009C{
+width: 572px;
+height: 130px;
+z-index: 101;
+}
+
+
+#aginB{
+position: absolute;
+z-index: 101;
+width: 54px;
+height: 54px;
+}
